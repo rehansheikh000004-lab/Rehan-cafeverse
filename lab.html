@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Coffee Recipe Lab
+</title>
+
+<link rel="stylesheet"
+href="lab.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Cormorant+Garamond:wght@400;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- BACK -->
+
+<a href="index.html"
+class="back-btn">
+
+← Back
+
+</a>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<p class="mini">
+COFFEE RECIPE LAB
+</p>
+
+<h1>
+
+Create your<br>
+signature coffee.
+
+</h1>
+
+<p class="hero-text">
+
+An experimental luxury coffee laboratory
+where you can mix ingredients,
+build cinematic drinks,
+and generate premium recipes.
+
+</p>
+
+</section>
+
+<!-- LAB -->
+
+<section class="lab-section">
+
+<div class="lab-card">
+
+<h2>
+Choose Ingredients
+</h2>
+
+<div class="ingredients">
+
+<button onclick="selectIngredient('Espresso')">
+Espresso
+</button>
+
+<button onclick="selectIngredient('Mocha')">
+Mocha
+</button>
+
+<button onclick="selectIngredient('Vanilla')">
+Vanilla
+</button>
+
+<button onclick="selectIngredient('Cream Foam')">
+Cream Foam
+</button>
+
+<button onclick="selectIngredient('Caramel')">
+Caramel
+</button>
+
+<button onclick="selectIngredient('Oat Milk')">
+Oat Milk
+</button>
+
+</div>
+
+</div>
+
+<!-- RESULT -->
+
+<div class="recipe-card">
+
+<p class="mini-result">
+YOUR RECIPE
+</p>
+
+<h2 id="recipeName">
+
+Luxury Blend
+
+</h2>
+
+<div class="recipe-list"
+id="recipeList">
+
+<p>
+No ingredients selected.
+</p>
+
+</div>
+
+<button class="generate-btn"
+onclick="generateRecipe()">
+
+Generate Recipe
+
+</button>
+
+</div>
+
+</section>
+
+<script src="lab.js"></script>
+
+</body>
+</html>
