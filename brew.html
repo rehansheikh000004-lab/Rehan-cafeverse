@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+AURA BREW EXPERIENCE
+</title>
+
+<link rel="stylesheet"
+href="brew.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Cormorant+Garamond:wght@400;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- BACK BUTTON -->
+
+<a href="index.html"
+class="back-btn">
+
+← Back
+
+</a>
+
+<!-- HERO -->
+
+<section class="brew-hero">
+
+<p class="mini-text">
+AURA BREW SYSTEM
+</p>
+
+<h1>
+
+Craft coffee<br>
+like cinematic art.
+
+</h1>
+
+<p class="hero-desc">
+
+A luxury digital brewing experience
+inspired by Tokyo cafés,
+Italian espresso bars,
+and futuristic atmosphere.
+
+</p>
+
+</section>
+
+<!-- BREW PANEL -->
+
+<section class="brew-panel">
+
+<div class="glass-card">
+
+<h2>
+Select Coffee Beans
+</h2>
+
+<div class="options">
+
+<button class="option-btn"
+onclick="selectBeans('Velvet Espresso')">
+
+Velvet Espresso
+
+</button>
+
+<button class="option-btn"
+onclick="selectBeans('Tokyo Roast')">
+
+Tokyo Roast
+
+</button>
+
+<button class="option-btn"
+onclick="selectBeans('Midnight Noir')">
+
+Midnight Noir
+
+</button>
+
+</div>
+
+</div>
+
+<div class="glass-card">
+
+<h2>
+Select Milk Style
+</h2>
+
+<div class="options">
+
+<button class="option-btn"
+onclick="selectMilk('Cream Foam')">
+
+Cream Foam
+
+</button>
+
+<button class="option-btn"
+onclick="selectMilk('Oat Silk')">
+
+Oat Silk
+
+</button>
+
+<button class="option-btn"
+onclick="selectMilk('Dark Mocha')">
+
+Dark Mocha
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BREW MACHINE -->
+
+<section class="machine-section">
+
+<div class="machine">
+
+<div class="steam steam1"></div>
+<div class="steam steam2"></div>
+<div class="steam steam3"></div>
+
+<div class="cup"></div>
+
+</div>
+
+<button class="brew-btn"
+onclick="brewCoffee()">
+
+BREW EXPERIENCE
+
+</button>
+
+</section>
+
+<!-- RESULT -->
+
+<section class="result-section">
+
+<div class="result-card"
+id="resultCard">
+
+<p class="result-mini">
+BREW COMPLETE
+</p>
+
+<h2 id="coffeeName">
+
+Luxury Coffee
+
+</h2>
+
+<p id="coffeeMilk">
+
+Cream Foam
+
+</p>
+
+</div>
+
+</section>
+
+<script src="brew.js"></script>
+
+</body>
+</html>
