@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Luxury Reservation
+</title>
+
+<link rel="stylesheet"
+href="reservation.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Cormorant+Garamond:wght@400;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- BACK -->
+
+<a href="index.html"
+class="back-btn">
+
+← Back
+
+</a>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<p class="mini">
+PRIVATE EXPERIENCE
+</p>
+
+<h1>
+
+Reserve your<br>
+luxury atmosphere.
+
+</h1>
+
+<p class="hero-text">
+
+A premium digital café reservation system
+inspired by luxury lounges,
+Tokyo coffee bars,
+and cinematic experiences.
+
+</p>
+
+</section>
+
+<!-- RESERVATION PANEL -->
+
+<section class="reservation-container">
+
+<div class="reservation-card">
+
+<h2>
+Book Table
+</h2>
+
+<input
+type="text"
+id="name"
+placeholder="Your Name">
+
+<select id="tableType">
+
+<option>
+VIP Lounge
+</option>
+
+<option>
+Window Seat
+</option>
+
+<option>
+Jazz Corner
+</option>
+
+<option>
+Minimal Table
+</option>
+
+</select>
+
+<input
+type="date"
+id="date">
+
+<input
+type="time"
+id="time">
+
+<button onclick="reserveTable()">
+
+Reserve Now
+
+</button>
+
+</div>
+
+</section>
+
+<!-- RESULT -->
+
+<section class="result-section">
+
+<div class="result-card"
+id="resultCard">
+
+<p class="mini">
+RESERVATION CONFIRMED
+</p>
+
+<h2 id="resultName">
+
+Rehan
+
+</h2>
+
+<p id="resultTable">
+
+VIP Lounge
+
+</p>
+
+<p id="resultDate">
+
+2026-05-25
+
+</p>
+
+<p id="resultTime">
+
+08:00 PM
+
+</p>
+
+</div>
+
+</section>
+
+<script src="reservation.js"></script>
+
+</body>
+</html>
