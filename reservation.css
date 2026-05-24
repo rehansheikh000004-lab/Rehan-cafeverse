@@ -1,0 +1,231 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:#f7f2ec;
+
+color:#2d1f18;
+
+overflow-x:hidden;
+}
+
+/* BACK */
+
+.back-btn{
+
+position:fixed;
+
+top:30px;
+left:40px;
+
+text-decoration:none;
+
+color:#2d1f18;
+
+font-size:18px;
+
+z-index:1000;
+}
+
+/* HERO */
+
+.hero{
+
+padding:140px 8% 80px;
+}
+
+.mini{
+
+font-size:12px;
+
+letter-spacing:4px;
+
+opacity:0.6;
+
+margin-bottom:20px;
+}
+
+.hero h1{
+
+font-size:90px;
+
+line-height:0.9;
+
+font-family:'Cormorant Garamond',serif;
+
+margin-bottom:30px;
+}
+
+.hero-text{
+
+max-width:600px;
+
+line-height:1.9;
+
+color:#666;
+}
+
+/* CONTAINER */
+
+.reservation-container{
+
+padding:20px 8% 100px;
+
+display:flex;
+
+justify-content:center;
+}
+
+.reservation-card{
+
+width:500px;
+
+padding:60px;
+
+background:white;
+
+border-radius:40px;
+
+box-shadow:
+0 30px 80px rgba(0,0,0,0.08);
+}
+
+.reservation-card h2{
+
+font-size:50px;
+
+margin-bottom:40px;
+
+font-family:'Cormorant Garamond',serif;
+}
+
+.reservation-card input,
+.reservation-card select{
+
+width:100%;
+
+padding:20px;
+
+margin-bottom:25px;
+
+border:none;
+
+border-radius:20px;
+
+background:#f4efea;
+
+font-size:16px;
+
+outline:none;
+}
+
+.reservation-card button{
+
+width:100%;
+
+padding:20px;
+
+border:none;
+
+border-radius:50px;
+
+background:#2d1f18;
+
+color:white;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:0.4s;
+}
+
+.reservation-card button:hover{
+
+background:#5c3f33;
+
+transform:translateY(-5px);
+}
+
+/* RESULT */
+
+.result-section{
+
+padding:0 8% 120px;
+}
+
+.result-card{
+
+max-width:700px;
+
+margin:auto;
+
+padding:70px;
+
+background:white;
+
+border-radius:40px;
+
+text-align:center;
+
+box-shadow:
+0 30px 80px rgba(0,0,0,0.08);
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:1s;
+}
+
+.result-card.show{
+
+opacity:1;
+
+transform:translateY(0);
+}
+
+.result-card h2{
+
+font-size:70px;
+
+margin:20px 0;
+
+font-family:'Cormorant Garamond',serif;
+}
+
+.result-card p{
+
+margin-bottom:15px;
+
+font-size:20px;
+
+color:#555;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:60px;
+}
+
+.reservation-card{
+
+padding:40px;
+}
+
+.result-card h2{
+
+font-size:45px;
+}
+
+}
